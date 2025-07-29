@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,89 +10,73 @@
         html {
             scroll-behavior: smooth;
         }
-
         body {
             padding-top: 60px;
-            background-color: #A3D2CA; /* Green background */
+            background-color: #A3D2CA;
             color: #333333;
             margin: 0;
         }
-
         .main-content {
-            background-color: #ffffff; /* White foreground */
+            background-color: #ffffff;
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
-            box-shadow: #333333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
         }
-
         .navbar {
             background-color: #A3D2CA !important;
         }
-
         .navbar-brand {
             color: #333333 !important;
             font-weight: bold;
         }
-
         .nav-link {
             color: #333333 !important;
         }
-
-            .nav-link:hover {
-                color: #5eaaa8 !important;
-            }
-
+        .nav-link:hover {
+            color: #5eaaa8 !important;
+        }
         h2 {
             color: #5eaaa8;
         }
-
         .list-group-item {
             background-color: #ffffff;
             border-color: #e0e0e0;
             color: #333333;
         }
-
         .carousel-item {
             height: 500px;
         }
-
-            .carousel-item img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 8px;
-            }
-
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
         @media (max-width: 768px) {
             .carousel-item {
                 height: 300px;
             }
         }
-
         @media (max-width: 576px) {
             .carousel-item {
                 height: 200px;
             }
         }
-
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
             filter: invert(1);
         }
-
         .btn-primary {
             background-color: #f5b7b1;
             border-color: #f5b7b1;
             color: #fff;
         }
-
-            .btn-primary:hover {
-                background-color: #f49a95;
-                border-color: #f49a95;
-            }
+        .btn-primary:hover {
+            background-color: #f49a95;
+            border-color: #f49a95;
+        }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="60">
@@ -106,31 +90,74 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav d-flex justify-content-around w-100">
-          <li class="nav-item"><a class="nav-link" href="wiebenik.html">Wie ben ik</a></li>
-          <li class="nav-item"><a class="nav-link" href="debehandeling.html">De behandeling</a></li>
-          <li class="nav-item"><a class="nav-link" href="prijzen.html">Prijslijst</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="wiebenik.html" data-i18n="nav_about">Wie ben ik</a></li>
+          <li class="nav-item"><a class="nav-link" href="debehandeling.html" data-i18n="nav_treatment">De behandeling</a></li>
+          <li class="nav-item"><a class="nav-link" href="prijzen.html" data-i18n="nav_prices">Prijslijst</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
+        <!-- Language Switcher -->
+        <div class="ms-3">
+          <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('nl')">
+            <img src="images/flag-nl.png" alt="NL" style="width: 20px; height: auto; margin-right: 5px;">
+            NL
+            </button>
+            <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('en')">
+            <img src="images/flag-en.png" alt="EN" style="width: 20px; height: auto; margin-right: 5px;">
+            EN
+            </button>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- Page Content -->
   <div class="main-content my-5">
-    <!-- About Section -->
     <section id="about" class="mb-5">
-      <h2>Verwen uw voeten, ze dragen u elke dag</h2>
-      <p>
-        Welkom bij AMPA, dé specialist in professionele voetverzorgingn die bij u thuis komt. <br>
-        Of u nu last heeft van pijnlijke voeten, op zoek bent naar ontspanning of gewoon uw voeten de aandacht wilt geven die ze verdienen, <br>u bent bij mij in goede handen.
-        Als gediplomeerd pedicure biedt ik behandelingen op maat, met aandacht voor hygiëne, comfort en resultaat. <br>
+      <h2 data-i18n="title">Verwen uw voeten, ze dragen u elke dag</h2>
+      <p data-i18n="intro">
+        Welkom bij AMPA, dé specialist in professionele voetverzorging die bij u thuis komt. 
+        Of u nu last heeft van pijnlijke voeten, op zoek bent naar ontspanning of gewoon uw voeten de aandacht wilt geven die ze verdienen, 
+        u bent bij mij in goede handen. 
+        Als gediplomeerd pedicure bied ik behandelingen op maat, met aandacht voor hygiëne, comfort en resultaat. 
         Van voetverzorging tot cosmetische behandelingen: ik zorg ervoor dat u weer lekker in uw vel zit, van top tot teen.
-        <br>
         Voor een afspraak kunt u mij bereiken via de contactpagina en ervaar het verschil!
       </p>
     </section>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const translations = {
+      nl: {
+        nav_about: "Wie ben ik",
+        nav_treatment: "De behandeling",
+        nav_prices: "Prijslijst",
+        nav_contact: "Contact",
+        title: "Verwen uw voeten, ze dragen u elke dag",
+        intro: "Welkom bij AMPA, dé specialist in professionele voetverzorging die bij u thuis komt. Of u nu last heeft van pijnlijke voeten, op zoek bent naar ontspanning of gewoon uw voeten de aandacht wilt geven die ze verdienen, u bent bij mij in goede handen. Als gediplomeerd pedicure bied ik behandelingen op maat, met aandacht voor hygiëne, comfort en resultaat. Van voetverzorging tot cosmetische behandelingen: ik zorg ervoor dat u weer lekker in uw vel zit, van top tot teen. Voor een afspraak kunt u mij bereiken via de contactpagina en ervaar het verschil!"
+      },
+      en: {
+        nav_about: "About me",
+        nav_treatment: "Treatment",
+        nav_prices: "Price list",
+        nav_contact: "Contact",
+        title: "Pamper your feet, they carry you every day",
+        intro: "Welcome to AMPA, the professional footcare specialist who treats you at home. Whether you suffer from painful feet, are seeking to relax them or just want to give them their deserved attention, you’ll be in good hands with me. As a certified pedicurist I offer personalized treatment, with a view to hygiene, comfort and results. From footcare to cosmetic treatment: I’ll take great care that you’ll feel completely comfortable in your own skin. For a consultation you can reach me via the contact page, and experience the difference!"
+      }
+    };
+
+    function setLanguage(lang) {
+      localStorage.setItem('language', lang);
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        el.textContent = translations[lang][el.dataset.i18n];
+      });
+    }
+
+    // Load language on page load
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem('language') || 'nl';
+      setLanguage(savedLang);
+    });
+  </script>
 </body>
 </html>

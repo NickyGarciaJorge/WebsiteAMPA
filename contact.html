@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -76,28 +76,73 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav d-flex justify-content-around w-100">
-            <li class="nav-item"><a class="nav-link" href="wiebenik.html">Wie ben ik</a></li>
-            <li class="nav-item"><a class="nav-link" href="debehandeling.html">De behandeling</a></li>
-          <li class="nav-item"><a class="nav-link" href="prijzen.html">Prijslijst</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="wiebenik.html" data-i18n="nav_about">Wie ben ik</a></li>
+          <li class="nav-item"><a class="nav-link" href="debehandeling.html" data-i18n="nav_treatment">De behandeling</a></li>
+          <li class="nav-item"><a class="nav-link" href="prijzen.html" data-i18n="nav_prices">Prijslijst</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
+        <div class="ms-3">
+          <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('nl')">
+            <img src="images/flag-nl.png" alt="NL" style="width: 20px; height: auto; margin-right: 5px;">
+            NL
+            </button>
+            <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('en')">
+            <img src="images/flag-en.png" alt="EN" style="width: 20px; height: auto; margin-right: 5px;">
+            EN
+            </button>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- Page Content -->
   <div class="main-content my-5">
-    <!-- Contact Information -->
     <section id="contact" class="mb-5">
-      <h2>Contact</h2>
-      <p>
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p data-i18n="contact_text">
         Wilt u meer informatie over de behandeling of een afspraak maken?
         <br><br>
-        Neem dan telefonisch contact op, of stuur een Whatsapp bericht
+        Neem dan telefonisch contact op, of stuur een Whatsapp bericht.
       </p>
-      <p><img src="Images/faviconPhone.png" alt="Pedicure 1"> <a href="tel:+31622693375">+31 6 22693375</a></p>
+      <p>
+        <img src="Images/faviconPhone.png" alt="Telefoon"> 
+        <a href="tel:+31622693375">+31 6 22693375</a>
+      </p>
     </section>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const translations = {
+      nl: {
+        nav_about: "Wie ben ik",
+        nav_treatment: "De behandeling",
+        nav_prices: "Prijslijst",
+        nav_contact: "Contact",
+        contact_title: "Contact",
+        contact_text: "Wilt u meer informatie over de behandeling of een afspraak maken?<br><br>Neem dan telefonisch contact op, of stuur een Whatsapp bericht."
+      },
+      en: {
+        nav_about: "About me",
+        nav_treatment: "Treatment",
+        nav_prices: "Price list",
+        nav_contact: "Contact",
+        contact_title: "Contact",
+        contact_text: "Would you like more information regarding treatment and/or want to make an appointment?<br><br>Then call or text this number on Whatsapp."
+      }
+    };
+
+    function setLanguage(lang) {
+      localStorage.setItem('language', lang);
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        el.innerHTML = translations[lang][el.dataset.i18n];
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem('language') || 'nl';
+      setLanguage(savedLang);
+    });
+  </script>
 </body>
 </html>
