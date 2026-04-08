@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prijslijst – Pedicure Studio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <meta property="og:image" content="Images/logoAmpaPreview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
   <style>
     html {
       scroll-behavior: smooth;
@@ -59,7 +63,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">AMPA</a>
+      <img src="Images\logoAmpa.png" alt="Logo" height="40">
+      <a class="navbar-brand" href="index.html">AMPA Provoet</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,16 +72,17 @@
         <ul class="navbar-nav d-flex justify-content-around w-100">
           <li class="nav-item"><a class="nav-link" href="wiebenik.html" data-i18n="nav_about">Wie ben ik</a></li>
           <li class="nav-item"><a class="nav-link" href="debehandeling.html" data-i18n="nav_treatment">De behandeling</a></li>
-          <li class="nav-item"><a class="nav-link active" href="prijzen.html" data-i18n="nav_prices">Prijslijst</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="debehandelingzooltjes.html" data-i18n="nav_treatment_insoles">Behandeling zooltjes</a></li>
+          <li class="nav-item"><a class="nav-link" href="prijzen.html" data-i18n="nav_prices">Prijslijst</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <div class="ms-3">
           <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('nl')">
-            <img src="images/flag-nl.png" alt="NL" style="width: 20px; height: auto; margin-right: 5px;">
+            <img src="Images/flag-nl.png" alt="NL" style="width: 20px; height: auto; margin-right: 5px;">
             NL
             </button>
             <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('en')">
-            <img src="images/flag-en.png" alt="EN" style="width: 20px; height: auto; margin-right: 5px;">
+            <img src="Images/flag-en.png" alt="EN" style="width: 20px; height: auto; margin-right: 5px;">
             EN
             </button>
         </div>
@@ -151,6 +157,9 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
           <span data-i18n="price_3">Uitgebreide Pedicure behandeling</span> <span>€57,50</span>
         </li>
         <li class="list-group-item d-flex justify-content-between">
+            <span data-i18n="price_7">Inmeten + zooltjes</span> <span>€150-€165</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
             <span data-i18n="price_4">Gel lak</span> <span>€37,50</span>
         </li>
         <li class="list-group-item d-flex justify-content-between">
@@ -187,6 +196,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
         </div>
       <p data-i18n="price_note" class="mt-3">
+        Eventuele parkeerkosten zijn voor eigen rekening.<br>
         Als de behandeltijd langer is vanwege de hoeveelheid aan problemen aan uw voeten, dan zullen wij uw behandelplan aanpassen en eventueel een nieuwe afspraak inplannen.
         <br><br>
         Annuleren van de afspraak dient 48 uur van tevoren gemeld te worden, bij niet tijdig afmelden wordt de behandeling in rekening gebracht.
@@ -226,32 +236,34 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
       nl: {
         nav_about: "Wie ben ik",
         nav_treatment: "De behandeling",
+        nav_treatment_insoles: "Behandeling zooltjes",
         nav_prices: "Prijslijst",
         nav_contact: "Contact",
         price_title: "Prijslijst",
         price_1: "1e afspraak behandeling + anamnese",
-        price_2: "Basic Pedicure behandeling",
-        price_3: "Uitgebreide Pedicure behandeling",
+        price_2: "Pedicure behandeling +- 30 Min (1 likdoorn/eelt locatie)",
+        price_3: "Uitgebreide Pedicure behandeling  +- 45 Min (meerdere likdoorn/eelt locatie)",
         price_4: "Gel lak",
         price_5: "Voorrijkosten in Amstelveen",
         price_6: "Voorrijkosten buiten Amstelveen",
         price_6_value: "In overleg",
-        price_note: "Als de behandeltijd langer is vanwege de hoeveelheid aan problemen aan uw voeten, dan zullen wij uw behandelplan aanpassen en eventueel een nieuwe afspraak inplannen.<br><br>Annuleren van de afspraak dient 48 uur van tevoren gemeld te worden, bij niet tijdig afmelden wordt de behandeling in rekening gebracht."
+        price_note: "Eventuele parkeerkosten zijn voor eigen rekening. Als de behandeltijd langer is vanwege de hoeveelheid aan problemen aan uw voeten, dan zullen wij uw behandelplan aanpassen en eventueel een nieuwe afspraak inplannen.<br><br>Annuleren van de afspraak dient 48 uur van tevoren gemeld te worden, bij niet tijdig afmelden wordt de behandeling in rekening gebracht."
       },
       en: {
         nav_about: "About me",
-        nav_treatment: "Treatment",
+        nav_treatment: "Treatment +- 30 min (1 corn/callus location)",
+        nav_treatment_insoles: "Treatment insoles",
         nav_prices: "Price list",
         nav_contact: "Contact",
         price_title: "Price list",
         price_1: "1st treatment consultation + anamnese",
         price_2: "Basic pedicure treatment",
-        price_3: "Extensive pedicure treatment",
+        price_3: "Extensive pedicure treatment +- 45 Min (multiple corn/callus locations)",
         price_4: "Gel polish",
         price_5: "Call-out charge in Amstelveen",
         price_6: "Call-out charge outside Amstelveen",
         price_6_value: "In consultation",
-        price_note: "Should the treatment time exceed your consultation due to the number of complaints, then I’ll modify your treatment plan and possibly plan another consultation.<br><br>Should you want or need to cancel, please do so within 48 hours prior to your consultation in order to avoid being charged."
+        price_note: "Any parking costs are at your own expense. Should the treatment time exceed your consultation due to the number of complaints, then I’ll modify your treatment plan and possibly plan another consultation.<br><br>Should you want or need to cancel, please do so within 48 hours prior to your consultation in order to avoid being charged."
       }
     };
 

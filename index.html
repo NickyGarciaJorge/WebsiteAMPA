@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Pedicure in Amstelveen. AMPA Voetverzorging Studio biedt professionele en hygiënische voetverzorging voor gezonde en mooie voeten. Maak vandaag nog een afspraak!">
-    <title>Pedicure Amstelveen | AMPA Voetverzorging Studio</title>
+    <meta name="description" content="Pedicure in Amstelveen. AMPA Provoet Voetverzorging Studio biedt professionele en hygiënische voetverzorging voor gezonde en mooie voeten. Maak vandaag nog een afspraak!">
+    <title>Pedicure Amstelveen | AMPA Provoet Voetverzorging Studio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <meta property="og:image" content="Images/logoAmpaPreview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
     <style>
         html {
             scroll-behavior: smooth;
@@ -84,7 +88,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">AMPA</a>
+      <img src="Images\logoAmpa.png" alt="Logo" height="40">
+      <a class="navbar-brand" href="#">AMPA Provoet</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -92,17 +97,18 @@
         <ul class="navbar-nav d-flex justify-content-around w-100">
           <li class="nav-item"><a class="nav-link" href="wiebenik.html" data-i18n="nav_about">Wie ben ik</a></li>
           <li class="nav-item"><a class="nav-link" href="debehandeling.html" data-i18n="nav_treatment">De behandeling</a></li>
+          <li class="nav-item"><a class="nav-link" href="debehandelingzooltjes.html" data-i18n="nav_treatment_insoles">Behandeling zooltjes</a></li>
           <li class="nav-item"><a class="nav-link" href="prijzen.html" data-i18n="nav_prices">Prijslijst</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <!-- Language Switcher -->
         <div class="ms-3">
           <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('nl')">
-            <img src="images/flag-nl.png" alt="NL" style="width: 20px; height: auto; margin-right: 5px;">
+            <img src="Images/flag-nl.png" alt="NL" style="width: 20px; height: auto; margin-right: 5px;">
             NL
             </button>
             <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('en')">
-            <img src="images/flag-en.png" alt="EN" style="width: 20px; height: auto; margin-right: 5px;">
+            <img src="Images/flag-en.png" alt="EN" style="width: 20px; height: auto; margin-right: 5px;">
             EN
             </button>
         </div>
@@ -129,9 +135,10 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
       <h2 data-i18n="title">Verwen uw voeten, ze dragen u elke dag</h2>
       <p data-i18n="intro">
         Welkom bij AMPA, dé specialist in professionele voetverzorging die bij u thuis komt. 
-        Of u nu last heeft van pijnlijke voeten, op zoek bent naar ontspanning of gewoon uw voeten de aandacht wilt geven die ze verdienen, 
+        Of u nu last heeft van pijnlijke voeten, 
+        op zoek bent naar ontspanning of gewoon uw voeten de aandacht wilt geven die ze verdienen, 
         u bent bij mij in goede handen. 
-        Als gediplomeerd pedicure bied ik behandelingen op maat, met aandacht voor hygiëne, comfort en resultaat. 
+        Als gediplomeerd medisch pedicure bied ik behandelingen op maat, met aandacht voor hygiëne, comfort en resultaat. 
         Van voetverzorging tot cosmetische behandelingen: ik zorg ervoor dat u weer lekker in uw vel zit, van top tot teen.
         Voor een afspraak kunt u mij bereiken via de contactpagina en ervaar het verschil!
       </p>
@@ -144,14 +151,16 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
       nl: {
         nav_about: "Wie ben ik",
         nav_treatment: "De behandeling",
+        nav_treatment_insoles: "Behandeling zooltjes",
         nav_prices: "Prijslijst",
         nav_contact: "Contact",
         title: "Verwen uw voeten, ze dragen u elke dag",
-        intro: "Welkom bij AMPA, dé specialist in professionele voetverzorging die bij u thuis komt. Of u nu last heeft van pijnlijke voeten, op zoek bent naar ontspanning of gewoon uw voeten de aandacht wilt geven die ze verdienen, u bent bij mij in goede handen. Als gediplomeerd pedicure bied ik behandelingen op maat, met aandacht voor hygiëne, comfort en resultaat. Van voetverzorging tot cosmetische behandelingen: ik zorg ervoor dat u weer lekker in uw vel zit, van top tot teen. Voor een afspraak kunt u mij bereiken via de contactpagina en ervaar het verschil!"
+        intro: "Welkom bij AMPA, dé specialist in professionele voetverzorging die bij u thuis komt. Of u nu last heeft van pijnlijke voeten, op zoek bent naar ontspanning of gewoon uw voeten de aandacht wilt geven die ze verdienen, u bent bij mij in goede handen. Als gediplomeerd medisch pedicure bied ik behandelingen op maat, met aandacht voor hygiëne, comfort en resultaat. Van voetverzorging tot cosmetische behandelingen: ik zorg ervoor dat u weer lekker in uw vel zit, van top tot teen. Voor een afspraak kunt u mij bereiken via de contactpagina en ervaar het verschil!"
       },
       en: {
         nav_about: "About me",
         nav_treatment: "Treatment",
+        nav_treatment_insoles: "Treatment insoles",
         nav_prices: "Price list",
         nav_contact: "Contact",
         title: "Pamper your feet, they carry you every day",
