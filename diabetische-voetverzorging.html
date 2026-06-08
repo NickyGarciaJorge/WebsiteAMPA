@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diabetische Voetverzorging - AMPA Provoet</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      padding-top: 80px;
+      background-color: #A3D2CA;
+      color: #333333;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #333333 !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #5eaaa8 !important;
+    }
+
+    .main-content {
+      background-color: #ffffff;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    h1, h2, h3, h4 {
+      color: #5eaaa8;
+    }
+
+    ul {
+      margin-top: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #5eaaa8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div id="navbar"></div>
+
+<!-- Content -->
+<div class="main-content my-5">
+
+  <h1>Diabetische Voetverzorging bij AmpaProVoet</h1>
+
+  <p>
+    Heeft u diabetes? Dan verdienen uw voeten extra aandacht. Diabetes kan leiden tot een verminderde doorbloeding en een verminderd gevoel in de voeten, waardoor wondjes, drukplekken en andere voetproblemen minder snel worden opgemerkt.
+  </p>
+
+  <p>
+    Een goede en regelmatige voetverzorging helpt om complicaties te voorkomen en uw voeten gezond te houden.
+  </p>
+
+  <p>
+    Bij Ampaprovoet bieden wij deskundige diabetische voetverzorging, afgestemd op uw persoonlijke situatie. Tijdens de behandeling controleren wij uw voeten zorgvuldig op risicofactoren, verzorgen wij nagels en huid, behandelen wij eventuele eeltvorming en geven wij advies over dagelijkse voetverzorging.
+  </p>
+
+  <h2>Onze behandeling richt zich op:</h2>
+
+  <ul>
+    <li>Preventie van voetproblemen en complicaties</li>
+    <li>Professionele verzorging van nagels en huid</li>
+    <li>Behandeling van eelt, likdoorns en drukplekken</li>
+    <li>Controle van de algehele conditie van uw voeten</li>
+    <li>Persoonlijk advies voor optimale voetgezondheid</li>
+  </ul>
+
+  <p>
+    Regelmatige voetverzorging is een belangrijk onderdeel van de diabeteszorg. Door uw voeten tijdig te laten controleren en behandelen, verkleint u de kans op ernstige klachten en kunt u comfortabel blijven bewegen.
+  </p>
+
+  <p>
+    Ampaprovoet staat voor professionele zorg, persoonlijke aandacht en gezonde voeten. Maak vandaag nog een afspraak voor een diabetische voetbehandeling.
+  </p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+fetch('navbar.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('navbar').innerHTML = html;
+  });
+</script>
+
+</body>
+</html>

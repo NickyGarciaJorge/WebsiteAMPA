@@ -3,22 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prijslijst – Pedicure Studio</title>
+  <title>Prijslijst – AMPA Provoet</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-      <meta property="og:image" content="Images/logoAmpaPreview.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:type" content="website">
+
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
-      padding-top: 60px;
+      padding-top: 80px;
       background-color: #A3D2CA;
       color: #333333;
       margin: 0;
+      font-family: Arial, sans-serif;
     }
 
     .main-content {
@@ -26,29 +23,17 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 2rem;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-      border-radius: 8px;
-    }
-
-    .navbar {
-      background-color: #A3D2CA !important;
-    }
-
-    .navbar-brand {
-      color: #333333 !important;
-      font-weight: bold;
-    }
-
-    .nav-link {
-      color: #333333 !important;
-    }
-
-    .nav-link:hover {
-      color: #5eaaa8 !important;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     }
 
     h2 {
       color: #5eaaa8;
+    }
+
+        .navbar {
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     .list-group-item {
@@ -56,231 +41,137 @@
       border-color: #e0e0e0;
       color: #333333;
     }
-  </style>
-</head>
-<body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <img src="Images\logoAmpa.png" alt="Logo" height="40">
-      <a class="navbar-brand" href="index.html">AMPA Provoet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav d-flex justify-content-around w-100">
-          <li class="nav-item"><a class="nav-link" href="wiebenik.html" data-i18n="nav_about">Wie ben ik</a></li>
-          <li class="nav-item"><a class="nav-link" href="debehandeling.html" data-i18n="nav_treatment">De behandeling</a></li>
-          <li class="nav-item"><a class="nav-link" href="debehandelingzooltjes.html" data-i18n="nav_treatment_insoles">Behandeling zooltjes</a></li>
-          <li class="nav-item"><a class="nav-link" href="prijzen.html" data-i18n="nav_prices">Prijslijst</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html" data-i18n="nav_contact">Contact</a></li>
-        </ul>
-        <div class="ms-3">
-          <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('nl')">
-            <img src="Images/flagnl.png" alt="NL" style="width: 20px; height: auto; margin-right: 5px;">
-            NL
-            </button>
-            <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('en')">
-            <img src="Images/flagen.png" alt="EN" style="width: 20px; height: auto; margin-right: 5px;">
-            EN
-            </button>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="main-content my-5">
-    <section id="services" class="mb-5">
-              <div style="display: none;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in Amsterdam, Amstelveen, Aalsmeer en Uithoorn. Goedkoop en deskundig, goedkoop en professioneel: dat is de basis voor elke pedicure behandeling en medisch pedicure behandeling in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Steunzolen, inlegzolen en druk ontlastende zolen worden aangemeten door een ervaren podotherapeut en podoloog. Deze steunzolen en druk ontlastende zolen zorgen voor comfort en klachtenvermindering. In veel gevallen is er een vergoeding mogelijk voor steunzolen, inlegzolen en behandelingen door een podotherapeut of podoloog.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Een pedicure behandeling of medisch pedicure omvat nagelreparatie, nagelregulatie, gellak, orthese en nagelbeugel. Deze behandelingen worden goedkoop en vakkundig uitgevoerd in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ambulant, thuis en komt aan huis service is beschikbaar: een ambulant medisch pedicure, ambulant podoloog of ambulant podotherapeut komt aan huis in Amsterdam, Amstelveen, Aalsmeer en Uithoorn voor een volledige pedicure behandeling.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Behandeling van wrat, likdoorn, eelt, kloven en ingegroeide nagel wordt professioneel uitgevoerd. Wrat en likdoorn worden zorgvuldig verwijderd, terwijl eelt, kloven en ingegroeide nagel effectief behandeld worden door een medisch pedicure, podotherapeut en podoloog.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
-        </div>
-                <div style="display: none;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in Amsterdam, Amstelveen, Aalsmeer en Uithoorn. Goedkoop en deskundig, goedkoop en professioneel: dat is de basis voor elke pedicure behandeling en medisch pedicure behandeling in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Steunzolen, inlegzolen en druk ontlastende zolen worden aangemeten door een ervaren podotherapeut en podoloog. Deze steunzolen en druk ontlastende zolen zorgen voor comfort en klachtenvermindering. In veel gevallen is er een vergoeding mogelijk voor steunzolen, inlegzolen en behandelingen door een podotherapeut of podoloog.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Een pedicure behandeling of medisch pedicure omvat nagelreparatie, nagelregulatie, gellak, orthese en nagelbeugel. Deze behandelingen worden goedkoop en vakkundig uitgevoerd in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ambulant, thuis en komt aan huis service is beschikbaar: een ambulant medisch pedicure, ambulant podoloog of ambulant podotherapeut komt aan huis in Amsterdam, Amstelveen, Aalsmeer en Uithoorn voor een volledige pedicure behandeling.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Behandeling van wrat, likdoorn, eelt, kloven en ingegroeide nagel wordt professioneel uitgevoerd. Wrat en likdoorn worden zorgvuldig verwijderd, terwijl eelt, kloven en ingegroeide nagel effectief behandeld worden door een medisch pedicure, podotherapeut en podoloog.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
-        </div>
-      <h2 data-i18n="price_title">Prijslijst</h2>
-              <div style="display: none;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in Amsterdam, Amstelveen, Aalsmeer en Uithoorn. Goedkoop en deskundig, goedkoop en professioneel: dat is de basis voor elke pedicure behandeling en medisch pedicure behandeling in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Steunzolen, inlegzolen en druk ontlastende zolen worden aangemeten door een ervaren podotherapeut en podoloog. Deze steunzolen en druk ontlastende zolen zorgen voor comfort en klachtenvermindering. In veel gevallen is er een vergoeding mogelijk voor steunzolen, inlegzolen en behandelingen door een podotherapeut of podoloog.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Een pedicure behandeling of medisch pedicure omvat nagelreparatie, nagelregulatie, gellak, orthese en nagelbeugel. Deze behandelingen worden goedkoop en vakkundig uitgevoerd in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ambulant, thuis en komt aan huis service is beschikbaar: een ambulant medisch pedicure, ambulant podoloog of ambulant podotherapeut komt aan huis in Amsterdam, Amstelveen, Aalsmeer en Uithoorn voor een volledige pedicure behandeling.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Behandeling van wrat, likdoorn, eelt, kloven en ingegroeide nagel wordt professioneel uitgevoerd. Wrat en likdoorn worden zorgvuldig verwijderd, terwijl eelt, kloven en ingegroeide nagel effectief behandeld worden door een medisch pedicure, podotherapeut en podoloog.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
-        </div>
-                <div style="display: none;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in Amsterdam, Amstelveen, Aalsmeer en Uithoorn. Goedkoop en deskundig, goedkoop en professioneel: dat is de basis voor elke pedicure behandeling en medisch pedicure behandeling in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Steunzolen, inlegzolen en druk ontlastende zolen worden aangemeten door een ervaren podotherapeut en podoloog. Deze steunzolen en druk ontlastende zolen zorgen voor comfort en klachtenvermindering. In veel gevallen is er een vergoeding mogelijk voor steunzolen, inlegzolen en behandelingen door een podotherapeut of podoloog.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Een pedicure behandeling of medisch pedicure omvat nagelreparatie, nagelregulatie, gellak, orthese en nagelbeugel. Deze behandelingen worden goedkoop en vakkundig uitgevoerd in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ambulant, thuis en komt aan huis service is beschikbaar: een ambulant medisch pedicure, ambulant podoloog of ambulant podotherapeut komt aan huis in Amsterdam, Amstelveen, Aalsmeer en Uithoorn voor een volledige pedicure behandeling.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Behandeling van wrat, likdoorn, eelt, kloven en ingegroeide nagel wordt professioneel uitgevoerd. Wrat en likdoorn worden zorgvuldig verwijderd, terwijl eelt, kloven en ingegroeide nagel effectief behandeld worden door een medisch pedicure, podotherapeut en podoloog.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
-        </div>
-      <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between">
-            <span data-i18n="price_1">1e afspraak behandeling + intake</span> <span>€57,50</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span data-i18n="price_2">Basic Pedicure behandeling</span> <span>€45,00</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span data-i18n="price_3">Uitgebreide Pedicure behandeling</span> <span>€57,50</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-            <span data-i18n="price_7">Inmeten + zooltjes</span> <span>€150-€165</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-            <span data-i18n="price_4">Gel lak</span> <span>€37,50</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-            <span data-i18n="price_5">Voorrijkosten in Amstelveen</span> <span>€5,00</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-            <span data-i18n="price_6">Voorrijkosten buiten Amstelveen</span> <span data-i18n="price_6_value">In overleg</span>
-        </li>
-      </ul>
-              <div style="display: none;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in Amsterdam, Amstelveen, Aalsmeer en Uithoorn. Goedkoop en deskundig, goedkoop en professioneel: dat is de basis voor elke pedicure behandeling en medisch pedicure behandeling in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Steunzolen, inlegzolen en druk ontlastende zolen worden aangemeten door een ervaren podotherapeut en podoloog. Deze steunzolen en druk ontlastende zolen zorgen voor comfort en klachtenvermindering. In veel gevallen is er een vergoeding mogelijk voor steunzolen, inlegzolen en behandelingen door een podotherapeut of podoloog.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Een pedicure behandeling of medisch pedicure omvat nagelreparatie, nagelregulatie, gellak, orthese en nagelbeugel. Deze behandelingen worden goedkoop en vakkundig uitgevoerd in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ambulant, thuis en komt aan huis service is beschikbaar: een ambulant medisch pedicure, ambulant podoloog of ambulant podotherapeut komt aan huis in Amsterdam, Amstelveen, Aalsmeer en Uithoorn voor een volledige pedicure behandeling.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Behandeling van wrat, likdoorn, eelt, kloven en ingegroeide nagel wordt professioneel uitgevoerd. Wrat en likdoorn worden zorgvuldig verwijderd, terwijl eelt, kloven en ingegroeide nagel effectief behandeld worden door een medisch pedicure, podotherapeut en podoloog.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
-        </div>
-                <div style="display: none;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in Amsterdam, Amstelveen, Aalsmeer en Uithoorn. Goedkoop en deskundig, goedkoop en professioneel: dat is de basis voor elke pedicure behandeling en medisch pedicure behandeling in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Steunzolen, inlegzolen en druk ontlastende zolen worden aangemeten door een ervaren podotherapeut en podoloog. Deze steunzolen en druk ontlastende zolen zorgen voor comfort en klachtenvermindering. In veel gevallen is er een vergoeding mogelijk voor steunzolen, inlegzolen en behandelingen door een podotherapeut of podoloog.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Een pedicure behandeling of medisch pedicure omvat nagelreparatie, nagelregulatie, gellak, orthese en nagelbeugel. Deze behandelingen worden goedkoop en vakkundig uitgevoerd in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ambulant, thuis en komt aan huis service is beschikbaar: een ambulant medisch pedicure, ambulant podoloog of ambulant podotherapeut komt aan huis in Amsterdam, Amstelveen, Aalsmeer en Uithoorn voor een volledige pedicure behandeling.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Behandeling van wrat, likdoorn, eelt, kloven en ingegroeide nagel wordt professioneel uitgevoerd. Wrat en likdoorn worden zorgvuldig verwijderd, terwijl eelt, kloven en ingegroeide nagel effectief behandeld worden door een medisch pedicure, podotherapeut en podoloog.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
-        </div>
-      <p data-i18n="price_note" class="mt-3">
-        Eventuele parkeerkosten zijn voor eigen rekening.<br>
-        Als de behandeltijd langer is vanwege de hoeveelheid aan problemen aan uw voeten, dan zullen wij uw behandelplan aanpassen en eventueel een nieuwe afspraak inplannen.
-        <br><br>
-        Annuleren van de afspraak dient 48 uur van tevoren gemeld te worden, bij niet tijdig afmelden wordt de behandeling in rekening gebracht.
-      </p>
-              <div style="display: none;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in Amsterdam, Amstelveen, Aalsmeer en Uithoorn. Goedkoop en deskundig, goedkoop en professioneel: dat is de basis voor elke pedicure behandeling en medisch pedicure behandeling in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Steunzolen, inlegzolen en druk ontlastende zolen worden aangemeten door een ervaren podotherapeut en podoloog. Deze steunzolen en druk ontlastende zolen zorgen voor comfort en klachtenvermindering. In veel gevallen is er een vergoeding mogelijk voor steunzolen, inlegzolen en behandelingen door een podotherapeut of podoloog.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Een pedicure behandeling of medisch pedicure omvat nagelreparatie, nagelregulatie, gellak, orthese en nagelbeugel. Deze behandelingen worden goedkoop en vakkundig uitgevoerd in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ambulant, thuis en komt aan huis service is beschikbaar: een ambulant medisch pedicure, ambulant podoloog of ambulant podotherapeut komt aan huis in Amsterdam, Amstelveen, Aalsmeer en Uithoorn voor een volledige pedicure behandeling.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Behandeling van wrat, likdoorn, eelt, kloven en ingegroeide nagel wordt professioneel uitgevoerd. Wrat en likdoorn worden zorgvuldig verwijderd, terwijl eelt, kloven en ingegroeide nagel effectief behandeld worden door een medisch pedicure, podotherapeut en podoloog.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
-        </div>
-                <div style="display: none;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in Amsterdam, Amstelveen, Aalsmeer en Uithoorn. Goedkoop en deskundig, goedkoop en professioneel: dat is de basis voor elke pedicure behandeling en medisch pedicure behandeling in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Steunzolen, inlegzolen en druk ontlastende zolen worden aangemeten door een ervaren podotherapeut en podoloog. Deze steunzolen en druk ontlastende zolen zorgen voor comfort en klachtenvermindering. In veel gevallen is er een vergoeding mogelijk voor steunzolen, inlegzolen en behandelingen door een podotherapeut of podoloog.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Een pedicure behandeling of medisch pedicure omvat nagelreparatie, nagelregulatie, gellak, orthese en nagelbeugel. Deze behandelingen worden goedkoop en vakkundig uitgevoerd in Amsterdam, Amstelveen, Aalsmeer en Uithoorn.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ambulant, thuis en komt aan huis service is beschikbaar: een ambulant medisch pedicure, ambulant podoloog of ambulant podotherapeut komt aan huis in Amsterdam, Amstelveen, Aalsmeer en Uithoorn voor een volledige pedicure behandeling.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Behandeling van wrat, likdoorn, eelt, kloven en ingegroeide nagel wordt professioneel uitgevoerd. Wrat en likdoorn worden zorgvuldig verwijderd, terwijl eelt, kloven en ingegroeide nagel effectief behandeld worden door een medisch pedicure, podotherapeut en podoloog.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Goedkoop, met mogelijke vergoeding, en met aandacht voor kwaliteit: voor steunzolen, inlegzolen, pedicure behandeling en medisch pedicure in Amsterdam, Amstelveen, Aalsmeer en Uithoorn bent u verzekerd van professionele zorg.</p>
-        </div>
-        <a target='_blank' style='background:#000000;color:white;border-bottom:3px solid #dadada;border-radius:6px;padding:20px 22px;display:inline-block;text-decoration:none;font-size:20px;font-weight:bold;font-family:"Open Sans";text-align:center;' href='https://Ampaprovoet.boekingapp.nl?cid=16543&CategoryId=nvt'>Boek nu!</a>
-    </section>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const translations = {
-      nl: {
-        nav_about: "Wie ben ik",
-        nav_treatment: "De behandeling",
-        nav_treatment_insoles: "Behandeling zooltjes",
-        nav_prices: "Prijslijst",
-        nav_contact: "Contact",
-        price_title: "Prijslijst",
-        price_1: "1e afspraak behandeling + anamnese",
-        price_2: "Pedicure behandeling +- 30 Min (1 likdoorn/eelt locatie)",
-        price_3: "Uitgebreide Pedicure behandeling  +- 45 Min (meerdere likdoorn/eelt locatie)",
-        price_4: "Gel lak",
-        price_5: "Voorrijkosten in Amstelveen",
-        price_6: "Voorrijkosten buiten Amstelveen",
-        price_6_value: "In overleg",
-        price_7: "Inmeten + zooltjes",
-        price_note: "Eventuele parkeerkosten zijn voor eigen rekening. Als de behandeltijd langer is vanwege de hoeveelheid aan problemen aan uw voeten, dan zullen wij uw behandelplan aanpassen en eventueel een nieuwe afspraak inplannen.<br><br>Annuleren van de afspraak dient 48 uur van tevoren gemeld te worden, bij niet tijdig afmelden wordt de behandeling in rekening gebracht."
-      },
-      en: {
-        nav_about: "About me",
-        nav_treatment: "Treatment",
-        nav_treatment_insoles: "Treatment insoles",
-        nav_prices: "Price list",
-        nav_contact: "Contact",
-        price_title: "Price list",
-        price_1: "1st treatment consultation + anamnese",
-        price_2: "Basic pedicure treatment  +- 30 Min (one corn/callus location)",
-        price_3: "Extensive pedicure treatment +- 45 Min (multiple corn/callus locations)",
-        price_4: "Gel polish",
-        price_5: "Call-out charge in Amstelveen",
-        price_6: "Call-out charge outside Amstelveen",
-        price_6_value: "In consultation",
-        price_7: "Fitting + insoles",
-        price_note: "Any parking costs are at your own expense. Should the treatment time exceed your consultation due to the number of complaints, then I’ll modify your treatment plan and possibly plan another consultation.<br><br>Should you want or need to cancel, please do so within 48 hours prior to your consultation in order to avoid being charged."
-      }
-    };
-
-    function setLanguage(lang) {
-      localStorage.setItem('language', lang);
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        el.innerHTML = translations[lang][el.dataset.i18n];
-      });
+    .section-title {
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #5eaaa8;
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const savedLang = localStorage.getItem('language') || 'nl';
-      setLanguage(savedLang);
-    });
-  </script>
+    a.book-btn {
+      background:#000;
+      color:#fff;
+      border-radius:6px;
+      padding:16px 20px;
+      display:inline-block;
+      text-decoration:none;
+      font-weight:bold;
+      margin-top:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR (external, must match all pages) -->
+<div id="navbar"></div>
+
+<div class="main-content my-5">
+
+  <h2>Prijslijst</h2>
+
+  <div class="section-title">Pedicure</div>
+  <ul class="list-group mt-2">
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Wratten behandeling d.m.v. mierenzuur (10 min)</span><span>€35,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Verwijderen likdoorns (15 min)</span><span>€35,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Gellak (20 min)</span><span>€35,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Korte behandeling (10 min)</span><span>€17,50</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Pedicure – vervolgbehandeling (30 min)</span><span>€50,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Pedicure – deelbehandeling (20 min)</span><span>€42,50</span>
+    </li>
+
+  </ul>
+
+  <div class="section-title">Medisch Pedicure</div>
+  <ul class="list-group mt-2">
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Mycose/schimmeltest (10 min)</span><span>€25,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Intake + 1e behandeling (45 min)</span><span>€70,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Gellak (20 min)</span><span>€35,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Verwijderen likdoorns (15 min)</span><span>€35,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Deelbehandeling nagels (20 min)</span><span>€42,50</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Korte behandeling (10 min)</span><span>€17,50</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Nagelbeugel</span><span>€20,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Nagelprothese</span><span>€20,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Orthese</span><span>€25,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Drukontlastende zolen + inmeten</span><span>€150,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Nabestellen zolen</span><span>€120,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Medisch pedicure intake</span><span>€20,00</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between">
+      <span>Medisch pedicure vervolgbehandeling</span><span>€50,00</span>
+    </li>
+
+  </ul>
+
+  <a class="book-btn" target="_blank"
+     href="https://Ampaprovoet.boekingapp.nl?cid=16543&CategoryId=nvt">
+    Boek nu
+  </a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+fetch('navbar.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('navbar').innerHTML = html;
+  });
+</script>
+
 </body>
 </html>

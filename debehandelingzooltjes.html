@@ -4,197 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Drukontlastende zolen voor meer comfort en verlichting bij pijnlijke drukpunten onder de voet. Professionele voetverzorging en advies.">
-    <title>Drukontlastende Zolen | AMPA Provoet Voetverzorging Studio</title>
+    <title>Drukontlastende Zolen | AMPA Provoet</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
     <meta property="og:image" content="Images/logoAmpaPreview.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
+
     <style>
         html { scroll-behavior: smooth; }
+
         body {
-            padding-top: 60px;
+            padding-top: 80px;
             background-color: #A3D2CA;
             color: #333333;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
+
         .main-content {
             background-color: #ffffff;
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
-        .navbar { background-color: #A3D2CA !important; }
-        .navbar-brand { color: #333333 !important; font-weight: bold; }
-        .nav-link { color: #333333 !important; }
-        .nav-link:hover { color: #5eaaa8 !important; }
-        h2 { 
-    color: #5eaaa8; 
-    font-size: 2rem; /* example size for h2 */
-}
 
-h3 { 
-    color: #5eaaa8; 
-    font-size: 1.5rem; /* slightly smaller than h2 */
-}
-        .btn-primary {
-            background-color: #f5b7b1;
-            border-color: #f5b7b1;
-            color: #fff;
+        .navbar {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
-        .btn-primary:hover {
-            background-color: #f49a95;
-            border-color: #f49a95;
+
+        .navbar-brand,
+        .nav-link {
+            color: #333333 !important;
+            font-weight: 500;
         }
-        img { max-width: 100%; }
+
+        .nav-link:hover {
+            color: #5eaaa8 !important;
+        }
+
+        h2, h3 {
+            color: #5eaaa8;
+        }
+
+        ul {
+            margin-top: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        a {
+            color: #5eaaa8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="60">
+
+<body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <img src="Images/logoAmpa.png" alt="Logo" height="40">
-        <a class="navbar-brand" href="index.html">AMPA Provoet</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav d-flex justify-content-around w-100">
-                <li class="nav-item"><a class="nav-link" href="wiebenik.html" data-i18n="nav_about">Wie ben ik</a></li>
-                <li class="nav-item"><a class="nav-link" href="debehandeling.html" data-i18n="nav_treatment">De behandeling</a></li>
-                <li class="nav-item"><a class="nav-link" href="debehandelingzooltjes.html" data-i18n="nav_treatment_insoles">Behandeling zooltjes</a></li>
-                <li class="nav-item"><a class="nav-link" href="prijzen.html" data-i18n="nav_prices">Prijslijst</a></li>
-                <li class="nav-item"><a class="nav-link active" href="contact.html" data-i18n="nav_contact">Contact</a></li>
-            </ul>
-            <div class="ms-3">
-                <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('nl')">
-                    <img src="Images/flagnl.png" alt="NL" style="width: 20px; margin-right: 5px;">NL
-                </button>
-                <button class="btn btn-sm btn-outline-dark" onclick="setLanguage('en')">
-                    <img src="Images/flagen.png" alt="EN" style="width: 20px; margin-right: 5px;">EN
-                </button>
-            </div>
-        </div>
-    </div>
-</nav>
+<div id="navbar"></div>
 
-<!-- Page Content -->
+<!-- Content -->
 <div class="main-content my-5">
-    <section id="zolen">
-        <h2 data-i18n="title">Drukontlastende zolen voor meer comfort</h2>
 
-        <p data-i18n="intro">
-            Ervaar je pijn of overbelasting tijdens het lopen of staan? Drukontlastende zolen helpen de druk onder je voeten beter te verdelen, zodat gevoelige plekken minder belast worden. Dat zorgt voor meer comfort, minder irritatie en meer ondersteuning in het dagelijks leven.
-        </p>
+    <h2>Drukontlastende zolen voor meer comfort</h2>
 
-        <h3 data-i18n="when_needed_title">Voor wie zijn drukontlastende zolen geschikt?</h3>
-        <p data-i18n="when_needed">
-            Drukontlastende zolen zijn geschikt voor iedereen die extra comfort en ontlasting nodig heeft, zoals mensen die veel staan, lange afstanden lopen, gevoelige of snel vermoeide voeten hebben of extra demping zoeken in hun schoenen.
-        </p>
+    <p>
+        Ervaar je pijn of overbelasting tijdens het lopen of staan? Drukontlastende zolen verdelen de druk onder je voeten beter,
+        waardoor gevoelige zones worden ontlast en je comfortabeler beweegt.
+    </p>
 
-        <h3 data-i18n="what_are_title">Wat zijn drukontlastende zolen?</h3>
-        <p data-i18n="what_are">
-            Dit zijn speciaal ontworpen inlegzolen die de druk op kwetsbare of pijnlijke delen van de voet verminderen. Ze helpen pijn te verlichten, de druk gelijkmatiger te verdelen en het looppatroon te ondersteunen.
-        </p>
-        <ul data-i18n="used_for">
-            <li>pijn onder de voorvoet</li>
-            <li>hielklachten</li>
-            <li>gevoelige drukpunten</li>
-            <li>eelt of likdoorns</li>
-            <li>overbelasting door lang staan of lopen</li>
-            <li>vermoeide voeten</li>
-            <li>herstel na voetklachten</li>
-        </ul>
+    <h3>Voor wie zijn ze geschikt?</h3>
+    <p>
+        Voor mensen die veel staan, veel lopen, gevoelige voeten hebben of extra demping nodig hebben in hun schoenen.
+    </p>
 
-        <h3 data-i18n="how_work_title">Hoe werken drukontlastende zolen?</h3>
-        <p data-i18n="how_work">
-            Tijdens lopen en staan komt er veel kracht op je voeten te staan. Drukontlastende zolen absorberen schokken, verdelen de druk gelijkmatig, verminderen pijn en bieden extra demping en stabiliteit.
-        </p>
+    <h3>Wat zijn drukontlastende zolen?</h3>
+    <p>
+        Speciaal gemaakte inlegzolen die druk verminderen en het looppatroon ondersteunen.
+    </p>
 
-        <h3 data-i18n="benefits_title">De voordelen van drukontlastende zolen</h3>
-        <ul data-i18n="benefits">
-            <li>Comfortabel bij dagelijks gebruik</li>
-            <li>Minder druk op gevoelige zones</li>
-            <li>Extra schokabsorptie</li>
-            <li>Geschikt voor verschillende schoenen</li>
-            <li>Ondersteuning bij herstel en preventie</li>
-        </ul>
+    <ul>
+        <li>pijn onder de voorvoet</li>
+        <li>hielklachten</li>
+        <li>gevoelige drukpunten</li>
+        <li>eelt of likdoorns</li>
+        <li>overbelasting door langdurig staan of lopen</li>
+        <li>vermoeide voeten</li>
+        <li>herstel na voetklachten</li>
+    </ul>
 
-        <h3 data-i18n="why_choose_title">Waarom kiezen voor goede drukontlasting?</h3>
-        <p data-i18n="why_choose">
-            Goede zolen helpen je comfortabeler te lopen, langer te staan zonder overbelasting, gevoelige voeten te beschermen en dagelijkse activiteiten prettiger te volhouden.
-        </p>
+    <h3>Hoe werken ze?</h3>
+    <p>
+        Ze absorberen schokken, verdelen druk gelijkmatig en geven extra demping en stabiliteit tijdens lopen en staan.
+    </p>
 
-        <h3 data-i18n="personal_title">Persoonlijk comfort begint bij de juiste zool</h3>
-        <p data-i18n="personal">
-            Geen voet is hetzelfde. Kies een zool die past bij jouw voeten, schoenen en dagelijkse belasting. Met de juiste drukontlastende zool geef je je voeten rust, ondersteuning en comfort.
-        </p>
-    </section>
+    <h3>Voordelen</h3>
+    <ul>
+        <li>meer comfort in dagelijks gebruik</li>
+        <li>minder druk op gevoelige zones</li>
+        <li>beter schokabsorptie</li>
+        <li>geschikt voor meerdere schoentypes</li>
+        <li>ondersteuning bij herstel en preventie</li>
+    </ul>
+
+    <h3>Waarom goede drukontlasting?</h3>
+    <p>
+        Het helpt om langer en comfortabeler te staan en te lopen zonder overbelasting of pijn.
+    </p>
+
+    <h3>Persoonlijk advies</h3>
+    <p>
+        Elke voet is anders. Een juiste zool geeft ondersteuning die past bij jouw situatie en belasting.
+    </p>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
-const translations = {
-    nl: {
-        nav_about: "Wie ben ik",
-        nav_treatment: "De behandeling",
-        nav_treatment_insoles: "Behandeling zooltjes",
-        nav_prices: "Prijslijst",
-        nav_contact: "Contact",
-        title: "Drukontlastende zolen voor meer comfort",
-        intro: "Ervaar je pijn of overbelasting tijdens het lopen of staan? Drukontlastende zolen helpen de druk onder je voeten beter te verdelen, zodat gevoelige plekken minder belast worden. Dat zorgt voor meer comfort, minder irritatie en meer ondersteuning in het dagelijks leven.",
-        when_needed_title: "Voor wie zijn drukontlastende zolen geschikt?",
-        when_needed: "Drukontlastende zolen zijn geschikt voor iedereen die extra comfort en ontlasting nodig heeft, zoals mensen die veel staan, lange afstanden lopen, gevoelige of snel vermoeide voeten hebben of extra demping zoeken in hun schoenen.",
-        what_are_title: "Wat zijn drukontlastende zolen?",
-        what_are: "Dit zijn speciaal ontworpen inlegzolen die de druk op kwetsbare of pijnlijke delen van de voet verminderen. Ze helpen pijn te verlichten, de druk gelijkmatiger te verdelen en het looppatroon te ondersteunen.",
-        used_for: "<li>pijn onder de voorvoet</li><li>hielklachten</li><li>gevoelige drukpunten</li><li>eelt of likdoorns</li><li>overbelasting door lang staan of lopen</li><li>vermoeide voeten</li><li>herstel na voetklachten</li>",
-        how_work_title: "Hoe werken drukontlastende zolen?",
-        how_work: "Tijdens lopen en staan komt er veel kracht op je voeten te staan. Drukontlastende zolen absorberen schokken, verdelen de druk gelijkmatig, verminderen pijn en bieden extra demping en stabiliteit.",
-        benefits_title: "De voordelen van drukontlastende zolen",
-        benefits: "<li>Comfortabel bij dagelijks gebruik</li><li>Minder druk op gevoelige zones</li><li>Extra schokabsorptie</li><li>Geschikt voor verschillende schoenen</li><li>Ondersteuning bij herstel en preventie</li>",
-        why_choose_title: "Waarom kiezen voor goede drukontlasting?",
-        why_choose: "Goede zolen helpen je comfortabeler te lopen, langer te staan zonder overbelasting, gevoelige voeten te beschermen en dagelijkse activiteiten prettiger te volhouden.",
-        personal_title: "Persoonlijk comfort begint bij de juiste zool",
-        personal: "Geen voet is hetzelfde. Kies een zool die past bij jouw voeten, schoenen en dagelijkse belasting. Met de juiste drukontlastende zool geef je je voeten rust, ondersteuning en comfort."
-    },
-    en: {
-        nav_about: "About me",
-        nav_treatment: "Medical pedicure treatment",
-        nav_treatment_insoles: "Treatment insoles",
-        nav_prices: "Price list",
-        nav_contact: "Contact",
-        title: "Pressure-relief insoles for more comfort",
-        intro: "Do you experience pain or overuse while walking or standing? Pressure-relief insoles help distribute the pressure under your feet, relieving sensitive areas. This provides more comfort, less irritation and more support in daily life.",
-        when_needed_title: "Who can benefit from pressure-relief insoles?",
-        when_needed: "Pressure-relief insoles are suitable for anyone needing extra comfort and relief, such as people who stand a lot, walk long distances, have sensitive or easily tired feet, or seek extra cushioning in their shoes.",
-        what_are_title: "What are pressure-relief insoles?",
-        what_are: "These are specially designed insoles that reduce pressure on vulnerable or painful parts of the foot. They help relieve pain, distribute pressure more evenly, and support a natural walking pattern.",
-        used_for: "<li>pain under the forefoot</li><li>heel complaints</li><li>sensitive pressure points</li><li>calluses or corns</li><li>overuse from long standing or walking</li><li>tired feet</li><li>foot recovery</li>",
-        how_work_title: "How do pressure-relief insoles work?",
-        how_work: "While walking or standing, your feet bear a lot of force. Pressure-relief insoles absorb shocks, distribute pressure evenly, reduce pain, and provide extra cushioning and stability.",
-        benefits_title: "Benefits of pressure-relief insoles",
-        benefits: "<li>Comfortable for daily use</li><li>Less pressure on sensitive areas</li><li>Extra shock absorption</li><li>Suitable for various shoes</li><li>Support for recovery and prevention</li>",
-        why_choose_title: "Why choose good pressure relief?",
-        why_choose: "Good insoles help you walk more comfortably, stand longer without overuse, protect sensitive feet, and make daily activities more pleasant.",
-        personal_title: "Personal comfort starts with the right insole",
-        personal: "No foot is the same. Choose an insole that fits your feet, shoes, and daily load. The right pressure-relief insole gives your feet rest, support, and comfort."
-    }
-};
-
-function setLanguage(lang) {
-    localStorage.setItem('language', lang);
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        el.innerHTML = translations[lang][el.dataset.i18n];
-    });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem('language') || 'nl';
-    setLanguage(savedLang);
-});
+fetch('navbar.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('navbar').innerHTML = html;
+  });
 </script>
+
 </body>
 </html>
